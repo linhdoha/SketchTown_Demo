@@ -1,0 +1,1 @@
+qrReader.py path
