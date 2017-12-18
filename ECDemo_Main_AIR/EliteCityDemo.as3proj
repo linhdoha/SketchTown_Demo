@@ -60,6 +60,7 @@
     <element path="libs\GiraffePrintMapper.swc" />
     <element path="libs\CarPrintMapper.swc" />
     <element path="assets\assets.swc" />
+    <element path="libs\HousePrintMapper.swc" />
   </libraryPaths>
   <!-- External Libraries -->
   <externalLibraryPaths>

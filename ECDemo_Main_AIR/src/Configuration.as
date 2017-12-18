@@ -8,15 +8,22 @@ package
 	 */
 	public class Configuration
 	{
+		static public const BACKGROUND_WINDOW_TITLE:String = "EliteCity wallscreen";
+		static public const BACKGROUND_WINDOW_POS_X:int = 500;
+		static public const BACKGROUND_WINDOW_POS_Y:int = 200;
 		static public const BACKGROUND_WIDTH:int = 1080;
 		static public const BACKGROUND_HEIGHT:int = 720;
+		
 		static public const TEMP_DIR:String = File.applicationStorageDirectory.nativePath;
+		
 		static public const IMAGE01_WIDTH:int = 1500;
 		static public const IMAGE01_HEIGHT:int = 1500;
 		static public const IMAGE02_WIDTH:int = 1500;
 		static public const IMAGE02_HEIGHT:int = 2176;
 		static public const IMAGE03_WIDTH:int = 1500;
 		static public const IMAGE03_HEIGHT:int = 1500;
+		static public const IMAGE04_WIDTH:int = 435;
+		static public const IMAGE04_HEIGHT:int = 730;
 		
 		
 		static private var scanStorageDir:String;

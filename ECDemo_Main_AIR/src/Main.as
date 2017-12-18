@@ -52,6 +52,7 @@ package
 		private var TOGGLE_FULLSCREEN_COMMAND:String = "toggleFullscreen";
 		private var SCAN_COMMAND:String = "scan";
 		private var TOGGLE_BACKGROUND_COMMAND:String = "toggleBG";
+		private var housePrintMapper:HousePrintMapper;
 		
 		public function Main()
 		{
@@ -76,6 +77,7 @@ package
 			penguinPrintMapper = new PenguinPrintMapper();
 			giraffePrintMapper = new GiraffePrintMapper();
 			carPrintMapper = new CarPrintMapper();
+			housePrintMapper = new HousePrintMapper();
 			
 			
 			
@@ -120,7 +122,7 @@ package
 			var options:NativeWindowInitOptions = new NativeWindowInitOptions();
 			
 			options.systemChrome = NativeWindowSystemChrome.STANDARD;
-			options.type = NativeWindowType.UTILITY;
+			options.type = NativeWindowType.NORMAL;
 			options.renderMode = NativeWindowRenderMode.AUTO;
 			options.owner = this.stage.nativeWindow;
 			options.maximizable = false;
@@ -130,10 +132,10 @@ package
 			
 			
 			backgroundWindow = new NativeWindow(options);
-			backgroundWindow.title = "EliteCity Wallscreen";
+			backgroundWindow.title = Configuration.BACKGROUND_WINDOW_TITLE;
 			backgroundWindow.alwaysInFront = false;
-			backgroundWindow.x = 10;
-			backgroundWindow.y = 10;
+			backgroundWindow.x = Configuration.BACKGROUND_WINDOW_POS_X;
+			backgroundWindow.y = Configuration.BACKGROUND_WINDOW_POS_Y;
 			backgroundWindow.width = Configuration.BACKGROUND_WIDTH;
 			backgroundWindow.height = Configuration.BACKGROUND_HEIGHT;
 			backgroundWindow.stage.align = StageAlign.TOP_LEFT;
@@ -222,6 +224,10 @@ package
 					currentTemplateID = 3;
 					cropNTurnConsole.processImage(fileScanned, saveFile, Configuration.IMAGE03_WIDTH, Configuration.IMAGE03_HEIGHT);
 					break;
+				case "04":
+					currentTemplateID = 4;
+					cropNTurnConsole.processImage(fileScanned, saveFile, Configuration.IMAGE04_WIDTH, Configuration.IMAGE04_HEIGHT);
+					break;
 			}
 			
 			
@@ -272,6 +278,10 @@ package
 					carPrintMapper.applyTexture(filePath);
 					carPrintMapper.addEventListener(Event.COMPLETE, onMappingCompleted);
 					break;
+				case 4:
+					housePrintMapper.applyTexture(filePath);
+					housePrintMapper.addEventListener(Event.COMPLETE, onMappingCompleted);
+					break;
 			}
 			
 		}
@@ -290,6 +300,9 @@ package
 					break;
 				case 3:
 					printingClip = carPrintMapper.snapshot(carPrintMapper.bg.width, carPrintMapper.bg.height);
+					break;
+				case 4:
+					printingClip = housePrintMapper.snapshot(housePrintMapper.bg.width, housePrintMapper.bg.height);
 					break;
 			}
 			

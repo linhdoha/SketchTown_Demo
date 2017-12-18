@@ -14,7 +14,7 @@
     </define>
     <define append="true">
       <name>CONFIG::timeStamp</name>
-      <value>'17-Dec-17'</value>
+      <value>'18-Dec-17'</value>
     </define>
     <define append="true">
       <name>CONFIG::air</name>
@@ -41,6 +41,7 @@
       <path-element>D:\GitHub\EC_Demo\ECDemo_Main_AIR\libs\GiraffePrintMapper.swc</path-element>
       <path-element>D:\GitHub\EC_Demo\ECDemo_Main_AIR\libs\CarPrintMapper.swc</path-element>
       <path-element>D:\GitHub\EC_Demo\ECDemo_Main_AIR\assets\assets.swc</path-element>
+      <path-element>D:\GitHub\EC_Demo\ECDemo_Main_AIR\libs\HousePrintMapper.swc</path-element>
     </library-path>
   </compiler>
   <file-specs>
