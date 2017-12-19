@@ -55,12 +55,8 @@
   <!-- SWC Libraries -->
   <libraryPaths>
     <element path="libs\greensock.swc" />
-    <element path="libs\PenguinPrintMapper.swc" />
     <element path="libs\DeviceSelectionBox.swc" />
-    <element path="libs\GiraffePrintMapper.swc" />
-    <element path="libs\CarPrintMapper.swc" />
-    <element path="assets\assets.swc" />
-    <element path="libs\HousePrintMapper.swc" />
+    <element path="libs\printMapper.swc" />
   </libraryPaths>
   <!-- External Libraries -->
   <externalLibraryPaths>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+	<printMapper>
+		<image>
+			<id>02</id>
+			<croppedWidth>1500</croppedWidth>
+			<croppedHeight>2176</croppedHeight>
+			<mapperClass>giraffePrintMapper</mapperClass>
+		</image>
+		<image>
+			<id>03</id>
+			<croppedWidth>1500</croppedWidth>
+			<croppedHeight>1500</croppedHeight>
+			<mapperClass>carPrintMapper</mapperClass>
+		</image>
+		<image>
+			<id>04</id>
+			<croppedWidth>435</croppedWidth>
+			<croppedHeight>730</croppedHeight>
+			<mapperClass>housePrintMapper</mapperClass>
+		</image>
+	</printMapper>
+</data>

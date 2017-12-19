@@ -1,5 +1,6 @@
 package 
 {
+	import flash.display.DisplayObject;
 	import flash.display.Sprite;
 	import flash.display.StageDisplayState;
 	import flash.events.Event;
@@ -44,6 +45,10 @@ package
 			} else {
 				stage.displayState = StageDisplayState.FULL_SCREEN_INTERACTIVE;
 			}
+		}
+		
+		public function applyToHouseSlot(textureFile:String):void {
+			bgAsset.houseSlot.applyTexture(textureFile);
 		}
 	}
 

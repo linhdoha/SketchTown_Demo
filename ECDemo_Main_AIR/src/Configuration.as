@@ -16,8 +16,6 @@ package
 		
 		static public const TEMP_DIR:String = File.applicationStorageDirectory.nativePath;
 		
-		static public const IMAGE01_WIDTH:int = 1500;
-		static public const IMAGE01_HEIGHT:int = 1500;
 		static public const IMAGE02_WIDTH:int = 1500;
 		static public const IMAGE02_HEIGHT:int = 2176;
 		static public const IMAGE03_WIDTH:int = 1500;
